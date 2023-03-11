@@ -1,25 +1,5 @@
-import {
-  Text,
-  StyleSheet,
-  Platform,
-  StatusBar,
-  SafeAreaView,
-} from "react-native";
+import Routes from "./Routes";
 
 export default function App() {
-  return (
-    <SafeAreaView style={styles.container}>
-      <Text>Tushar creating an app</Text>
-    </SafeAreaView>
-  );
+  return <Routes />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "dodgerBlue",
-    // alignItems: "center",
-    // justifyContent: "center",
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-  },
-});
