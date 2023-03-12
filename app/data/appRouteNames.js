@@ -3,6 +3,7 @@ const appRouteNames = {
   homePageScreen: "homePageScreen",
   searchScreen: "searchScreen",
   notificationScreen: "notificationScreen",
+  videoScreen: "videoScreen",
 };
 
 export default appRouteNames;

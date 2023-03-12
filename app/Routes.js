@@ -7,24 +7,27 @@ import HomePageScreen from "./screens/HomePageScreen";
 import { AppHeader } from "./components";
 import SearchScreen from "./screens/SearchScreen";
 import NotificationScreen from "./screens/NotificationScreen";
+import VideoScreen from "./screens/VideoScreen";
 
 const Routes = () => {
   const Stack = createNativeStackNavigator();
 
+  const defaultHeaderOptions = ({ navigation }) => {
+    return {
+      header: () => <AppHeader navigation={navigation} />,
+    };
+  };
+
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName={appRouteNames.homePageScreen}>
+      <Stack.Navigator initialRouteName={appRouteNames.videoScreen}>
         <Stack.Screen
           options={{ headerShown: false }}
           name={appRouteNames.welcomeScreen}
           component={UserWelcomeScreen}
         />
         <Stack.Screen
-          options={({ navigation }) => {
-            return {
-              header: () => <AppHeader navigation={navigation} />,
-            };
-          }}
+          options={defaultHeaderOptions}
           name={appRouteNames.homePageScreen}
           component={HomePageScreen}
         />
@@ -35,13 +38,15 @@ const Routes = () => {
         />
 
         <Stack.Screen
-          options={({ navigation }) => {
-            return {
-              header: () => <AppHeader navigation={navigation} />,
-            };
-          }}
+          options={defaultHeaderOptions}
           name={appRouteNames.notificationScreen}
           component={NotificationScreen}
+        />
+
+        <Stack.Screen
+          options={defaultHeaderOptions}
+          name={appRouteNames.videoScreen}
+          component={VideoScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>

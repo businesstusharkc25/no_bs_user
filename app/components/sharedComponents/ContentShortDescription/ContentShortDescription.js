@@ -1,7 +1,7 @@
 import { Image, Text, View } from "react-native";
 import React from "react";
 import { styles } from "./styles";
-import { typography } from "../../../styles";
+import { typography, utilStyles } from "../../../styles";
 
 const ContentShortDescription = ({ contentData = {} }) => {
   const {
@@ -49,15 +49,7 @@ const ContentShortDescription = ({ contentData = {} }) => {
               25 Min ago by {channelHandle}
             </Text>
 
-            <View
-              style={{
-                height: 4,
-                width: 4,
-                borderRadius: 50,
-                backgroundColor: "white",
-                margin: 4,
-              }}
-            />
+            <View style={[utilStyles.dotSeparator]} />
 
             <Text
               style={{
@@ -68,15 +60,7 @@ const ContentShortDescription = ({ contentData = {} }) => {
               {contentViews}
             </Text>
 
-            <View
-              style={{
-                height: 4,
-                width: 4,
-                borderRadius: 50,
-                backgroundColor: "white",
-                margin: 4,
-              }}
-            />
+            <View style={[utilStyles.dotSeparator]} />
 
             <Text
               style={{

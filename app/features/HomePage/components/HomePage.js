@@ -9,7 +9,7 @@ import {
 
 const HomePage = ({ navigation }) => {
   const tempData = {
-    contentTitle: "Self Care",
+    contentTitle: "News Title",
     contentViews: "200K",
     channelHandle: "TusharKc",
     channelLogo:

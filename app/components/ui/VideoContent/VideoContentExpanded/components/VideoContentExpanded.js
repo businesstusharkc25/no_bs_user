@@ -4,7 +4,7 @@ import React from "react";
 const VideoContentExpanded = ({ contentData }) => {
   return (
     <View>
-      <Text>VideoContentExpanded</Text>
+      <Text style={{ color: "white" }}>VideoContentExpanded</Text>
     </View>
   );
 };
