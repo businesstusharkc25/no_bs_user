@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
   textWhite: {
     color: "white",
   },
+  textGray: { color: "#9B9B9B" },
 });
 
 export default styles;

@@ -4,6 +4,7 @@ import { ScrollView } from "react-native";
 import { styles } from "./styles";
 import { ChannelInfoShort } from "../../../components/ui/ChannelInfoShort";
 import { VideoContentExpanded } from "../../../components/ui";
+import { DiscussionPanelOverlay } from "../../../components/sharedComponents";
 
 const VideoPage = () => {
   return (
